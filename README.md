@@ -13,16 +13,9 @@
 > [!CAUTION]
 > **Fast Flags are extremely powerful, being that they are intended to only be used by Roblox engineers. While they can be very useful, they can cause issues with stability and functionality if you don't know what you're doing.**
 
-#### Version: `11.01.24` `EA2`
-* **207 Currently Listed**
-* **`Slide on Terrain/Mesh`**
-* **`Drive Vehicles Slowly`**
-* **`Replace all Decals with a Test Image`**
-* **Updated `Unified Lighting` to work for the lastest update`**
-* **Updated `Blue Theme`**
-* **Updated `V2 Menu 2**
-* **`Better Trackpad Scrolling`**
-* **`Maximum Dev Console Log Limit`/`Self Explanatory 12`**
+#### Version: `11.15.24` `I AM MUSIC`
+* **209 Currently Listed**
+* **List HiJacked by Espresso Security Agents**
 * **[Upcoming Updates Progress](assets/lists/updates/progress.md)**
 
 ## List Meanings
@@ -164,7 +157,12 @@ Wish it was different than what it was
 
 <h1 align="center">Graphical Settings</h1>
 
-
+### Disable Highlights 
+```
+{
+    "DFFlagRenderHighlightManagerPrepare": "True"
+}
+```
 ### Move Pre-Render Phase [~25% Performance Boost]
 > [!IMPORTANT]  
 > This FastFlag moves the Pre-Render task to an off thread after all other tasks are completed. By default, Pre-Render runs first, forcing the render thread to wait until the Pre-Render process finishes before it can start rendering a frame.
@@ -929,10 +927,16 @@ Switch your channel to zprojectuwpua for a temporary fix!
     "FFlagUIBloxUseNewThemeColorPalettes": "True"
 }
 ```
-### Blue Theme
+### Disable Blue Theme
 ```json
 {
-    "FFlagLuaAppEnableFoundationColors7": "True"
+    "FFlagLuaAppFoundationColorsABTest": "False"
+}
+```
+### Enable New Settings Layout
+```
+{
+    "FFlagOverrideInExperienceMenuReorderVariant1": "True"
 }
 ```
 ### No Transparency V4 Menu **(2023)**
